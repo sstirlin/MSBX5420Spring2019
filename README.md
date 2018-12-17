@@ -19,7 +19,7 @@ Leeds School of Business, University of Colorado Boulder
 
 |Date          |Topic |
 |--------------|------|
-|January 14    |[VM Installation](0101vminstallation/README.md)<br>[What is Virtualization?](0102whatisvirtualization/README.md)<br>[Linux Basics: Bash](0103bash/README.md)|
+|January 14    |[VM Installation](0101vminstallation/README.md)<br>[Course Overview](0102courseoverview/README.md)<br>[What is Virtualization?](0103whatisvirtualization/README.md)<br>[Linux Basics: Bash](0104bash/README.md)|
 |January 21    |MLK NO CLASS<br>[Virtualization-lite: Docker](0201docker/README.md)<br>[Distributed storage: HDFS](0202hdfs/README.md) |
 |January 28    |Spark 1 |
 |February 4    |Spark 2 |
@@ -33,6 +33,6 @@ Leeds School of Business, University of Colorado Boulder
 |April 1       |Kafka 1 |
 |April 8       |Kafka 2 |
 |April 15      |Kafka 3 |
-|April 22      |Kafka 4 |
+|April 22      |Guest Lecture: Tim Berglund from Confluent |
 |April 29      |Elasticsearch |
 |Final         |To be announced |
