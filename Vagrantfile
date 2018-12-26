@@ -79,7 +79,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #config.vm.provision "shell", inline: "sudo rmdir /media/VBoxGuestAddition"
   # Permit anyone to start the GUI
   #config.vm.provision "shell", inline: "sudo sed -i 's/allowed_users=.*$/allowed_users=anybody/' /etc/X11/Xwrapper.config"
-  config.vm.provision "shell", inline: "sudo apt-get install -y docker docker-compose git zsh"
+  config.vm.provision "shell", inline: "sudo apt-get install -y docker docker-compose git zsh jq"
   config.vm.provision "shell", inline: "test -e ~/.oh-my-zsh || git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh", privileged: false
   config.vm.provision "shell", inline: "test -e ~/.zshrc || cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc", privileged: false
   #config.vm.provision "shell", inline: "sudo chsh -s $(which zsh) vagrant"
