@@ -24,7 +24,7 @@ need to disable those now.  They are incompatible with VirtualBox.  If you don't
 
 NOTE for people *not* on a Mac:  There is a slight chance that virtualization is disabled in your BIOS/UEFI.  If VirtualBox
 complains, then you need to enable it.  The steps are unique to every system,
-but usually entails restarting your computer, waiting for the initial screen to flash, then hitting the <Del> or <Esc> keys to enter SETUP.
+but usually entails restarting your computer, waiting for the initial screen to flash, then hitting the `Del` or `Esc` keys to enter SETUP.
 When in doubt, ask me.
 
 Now that VirtualBox and Vagrant are installed, you need to open a terminal (aka command prompt).  In Windows search for
