@@ -13,10 +13,10 @@ We will work almost exclusively in Linux this semester.
 
 The minimum system required for this class is a laptop with 8GB of ram and 4 cores.  16GB is recommended.
 
-First, browse to https://www.virtualbox.org/wiki/Downloads and pick the version of VirtualBox that fits your operating system.
-You need to download and install it.
+First, browse to https://www.virtualbox.org/wiki/Download_Old_Builds_5_2 and pick the download link that corresponds to your operating system.
+It is important that you download and install version 5.2 of VirtualBox.  Other versions are not guaranteed to work correctly.
 
-Next, browse to https://www.vagrantup.com/downloads.html and pick the version of Vagrant that fits your operating system.
+Next, browse to https://www.vagrantup.com/downloads.html and pick the download link that corresponds to your operating system.
 You need to download and install it.
 
 NOTE:  If you have played with virtualization before and have enabled Hyper-V (Windows), Parallels (Mac), or KVM (Linux), then you
