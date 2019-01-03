@@ -20,7 +20,7 @@ Leeds School of Business, University of Colorado Boulder
 |Date          |Topic |
 |--------------|------|
 |January 14    |[VM Installation](0101vminstallation/README.md)<br>[Course Overview](0102courseoverview/README.md)<br>[What is Virtualization?](0103whatisvirtualization/README.md)<br>[Linux Basics: Bash](0104bash/README.md)|
-|January 21    |MLK NO CLASS<br>[Virtualization-lite: Docker](0201docker/README.md)<br>[Distributed storage: HDFS](0202hdfs/README.md) |
+|January 21    |MLK NO CLASS<br>[Intro to Python](0201python/README.md) |
 |January 28    |Spark 1 |
 |February 4    |Spark 2 |
 |February 11   |Exam 1 |
