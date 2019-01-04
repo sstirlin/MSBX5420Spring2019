@@ -52,7 +52,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.gui = true
   
     # Use VBoxManage to customize the VM. For example to change memory:
-    vb.customize ["modifyvm", :id, "--memory", "6144"]
+    vb.customize ["modifyvm", :id, "--memory", "4096"]
     vb.customize ["modifyvm", :id, "--cpus", "3"]
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     #if Vagrant::Util::Platform.windows? then
@@ -94,9 +94,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", inline: "sudo userdel -r ubuntu || :"
   #config.vm.provision "shell", inline: "test -e hadoop-2.9.2.tar.gz || wget http://apache.cs.utah.edu/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz", privileged: false
   #config.vm.provision "shell", inline: "test -e hadoop-2.9.2 || tar zxvf hadoop-2.9.2.tar.gz", privileged: false
-  #config.vm.provision "shell", inline: "sudo apt-get install -y default-jre"
-  #config.vm.provision "shell", inline: "echo \"export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64\" >> ~/.bashrc", privileged: false
-  #config.vm.provision "shell", inline: "echo \"export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64\" >> ~/.zshrc", privileged: false
+  config.vm.provision "shell", inline: "sudo apt-get install -y default-jre"
+  config.vm.provision "shell", inline: "echo \"export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64\" >> ~/.bashrc", privileged: false
+  config.vm.provision "shell", inline: "echo \"export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64\" >> ~/.zshrc", privileged: false
   #config.vm.provision "shell", inline: "echo \"export HADOOP_HOME=$HOME/hadoop-2.9.2\" >> ~/.bashrc", privileged: false
   #config.vm.provision "shell", inline: "echo \"export HADOOP_HOME=$HOME/hadoop-2.9.2\" >> ~/.zshrc", privileged: false
   #config.vm.provision "shell", inline: "echo \"export PATH=$HOME/hadoop-2.9.2/bin:$PATH\" >> ~/.bashrc", privileged: false
