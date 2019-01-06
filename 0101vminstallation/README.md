@@ -48,11 +48,12 @@ vagrant plugin install vagrant-disksize
 vagrant up
 ```
 
-**NOTE for Windows users:**  If you are in Windows and the `curl` command above failed then manually browse
+**NOTE for Windows users:**  If the `curl` command above failed then manually browse
 to https://raw.githubusercontent.com/sstirlin/MSBX5420Spring2019/master/Vagrantfile and right-click on the
-text.  Choose `Save As`.  Navigate to the `msbx5420vagrant` folder (we just created it above) and name the
-file `Vagrantfile` (NO EXTENSION!!!).  You can then just skip the `curl` download step.  Beware that some
-browsers (e.g. Chrome) put a `.txt` extension on there anyway.  You'll need to rename it to remove the extension.  Grrr.
+page (it should look like a bunch of code).
+Choose `Save As` and download it to the `msbx5420vagrant` folder that we just created.  Make sure to name the file
+`Vagrantfile` (NO EXTENSION!!!).  You can then just skip the `curl` download step.  **Beware** that some
+browsers (e.g. Chrome) will add a `.txt` extension anyway.  You'll need to rename it to remove the extension.
 
 The `vagrant up` command should run for a long time (45 minutes to an hour).  Once it finishes 
 your VM will be started, however it will not be in a usable state.  You need to restart it.
