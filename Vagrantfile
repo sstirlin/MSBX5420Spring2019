@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "ubuntu/bionic64"
-  config.disksize.size = '150GB'
+  config.disksize.size = '50GB'
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -53,7 +53,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
     # Use VBoxManage to customize the VM. For example to change memory:
     vb.customize ["modifyvm", :id, "--memory", "4096"]
-    vb.customize ["modifyvm", :id, "--cpus", "3"]
+    vb.customize ["modifyvm", :id, "--cpus", "2"]
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     #if Vagrant::Util::Platform.windows? then
     #	vb.customize ["storageattach", :id, "--storagectl", "IDE", 
