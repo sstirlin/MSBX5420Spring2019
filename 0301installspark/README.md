@@ -31,4 +31,9 @@ jupyter notebook
 Check out [this example Jupyter notebook](hello_world_spark.ipynb) that shows how to use this
 HDFS and Spark cluster. 
 
-Inside of Jupyter you can run the following commands
+When you are done with the HDFS and Spark cluster you can shut it down by entering the following
+into a terminal (inside your Linux VM):
+```sh
+cd ~/projects/docker-spark/
+docker-compose down
+```
