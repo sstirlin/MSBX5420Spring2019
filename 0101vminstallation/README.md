@@ -13,10 +13,21 @@ We will work almost exclusively in Linux this semester.
 
 The minimum hardware required for this class is a laptop with 8GB of ram and 4 cores.  16GB is recommended.
 
-NOTE:  If you have played with virtualization before and have enabled Hyper-V (Windows), KVM (Linux), or 
-VMWare ESXi then you need to disable it now.  Talk to me and we can work through it together.
-We are using VirtualBox for the first several weeks, and it doesn't play well with those other
-hypervisors.  If you don't know what this means then don't worry about it.
+In Windows you can view your system specs by clicking on the search button and typing `msinfo32`.  This should
+find the `System Information` program.  Open it and inspect the following fields: 
+
+- OS Name (hopefully this is Windows 10.  Is it Home, Pro, Education, or Enterprise?)
+- Version (for Windows 10 make sure it is build 17063 or later)
+- Processor (hover over it for a few seconds to get full info, should be 4 Logical Processor(s) or greater)
+- Installed Physical Memory (should be 8GB or greater)
+- Hyper V Virtualization Enabled in Firmware (should be Yes - although we will not be using Hyper V, VirtualBox needs this)
+
+In Windows if Hyper-V is enabled then you need to disable it.  Click on the search button and search for the
+program `Turn Windows features on or off`.  Open it and make sure Hyper-V is unchecked.  If you change this setting
+then you need to reboot your computer.
+
+On Mac click on the Apple icon (upper left corner) and select `About this Mac`.  Ensure that you have 4 cores and 8GB of
+ram installed.
 
 
 ## Steps
@@ -34,7 +45,7 @@ to every laptop, but usually entails restarting your computer,
 waiting for the initial screen to flash, then quickly hitting the `Del` or `Esc` keys to enter SETUP.
 When in doubt, ask me.
 
-Now that VirtualBox and Vagrant are installed, you need to open a command-line interface ("Terminal" in OSX, 
+Now that VirtualBox and Vagrant are installed, you need to open a command-line interface (aka "Terminal" in OSX, 
 "Command Prompt" in Windows).
 In Windows click on the search button and type `cmd`.  In OSX open up `Applications->Utilities->Terminal`.
 
