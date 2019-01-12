@@ -13,6 +13,8 @@ We will work almost exclusively in Linux this semester.
 
 The minimum hardware required for this class is a laptop with 8GB of RAM and 4 cores.  16GB is recommended.
 
+### Windows
+
 In Windows you can view your system specs by clicking on the search button and typing `msinfo32`.  This should
 find the `System Information` program.  Open it and inspect the following fields: 
 
@@ -25,6 +27,9 @@ find the `System Information` program.  Open it and inspect the following fields
 In Windows if Hyper-V is enabled then you need to disable it.  Click on the search button and search for the
 program `Turn Windows features on or off`.  Open it and make sure Hyper-V is unchecked.  If you change this setting
 then you need to reboot your computer.
+
+
+### OSX
 
 On Mac click on the Apple icon (upper left corner) and select `About this Mac`.  Ensure that you have 4 cores and 8GB of
 ram installed.
