@@ -1,4 +1,4 @@
-Work in progress...
+We will install a cluster containing HDFS and Spark together during class.
 
 
 ## Quickstart to get HDFS and Spark running
