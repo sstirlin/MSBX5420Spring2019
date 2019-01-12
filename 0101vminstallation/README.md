@@ -11,7 +11,7 @@ We will work almost exclusively in Linux this semester.
 
 ## Before we begin
 
-The minimum hardware required for this class is a laptop with 8GB of ram and 4 cores.  16GB is recommended.
+The minimum hardware required for this class is a laptop with 8GB of RAM and 4 cores.  16GB is recommended.
 
 In Windows you can view your system specs by clicking on the search button and typing `msinfo32`.  This should
 find the `System Information` program.  Open it and inspect the following fields: 
@@ -45,9 +45,9 @@ to every laptop, but usually entails restarting your computer,
 waiting for the initial screen to flash, then quickly hitting the `Del` or `Esc` keys to enter SETUP.
 When in doubt, ask me.
 
-Now that VirtualBox and Vagrant are installed, you need to open a command-line interface (aka "Terminal" in OSX, 
-"Command Prompt" in Windows).
-In Windows click on the search button and type `cmd`.  In OSX open up `Applications->Utilities->Terminal`.
+Now that VirtualBox and Vagrant are installed, you need to open a command-line interface.
+In Windows click on the search button and type `cmd`.  This should find the `Command Prompt` program.
+In OSX open up `Applications->Utilities->Terminal`.
 
 Once open, type the following commands (if any single command fails then ask me before proceeding):
 
