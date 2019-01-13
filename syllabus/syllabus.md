@@ -9,9 +9,9 @@ Leeds School of Business, University of Colorado Boulder
 
 **Emails:**  firstname.lastname@colorado.edu
 
-**Office:**  TBD
+**Office:**  Koelbel 215 (I cannot imagine spending much time here)
 
-**Phone:**  TBD
+**Office hours:**  Thursdays 4:30-6pm at the study tables in the Koelbel atrium
 
 
 ## Course Description
