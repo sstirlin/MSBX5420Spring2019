@@ -3,15 +3,15 @@ Leeds School of Business, University of Colorado Boulder
 
 ## Contact Information
 
-**Instructor:**  Dr. Spencer Stirling
+**Instructor:**  Dr. Spencer Stirling (spencer DOT stirling AT colorado DOT edu)
 
-**Co-Instructor:**  Marilyn Waldman
-
-**Emails:**  firstname.lastname@colorado.edu
+**Co-Instructor:**  Marilyn Waldman (hampy AT colorado DOT edu)
 
 **Office:**  Koelbel 215 (I cannot imagine spending much time here)
 
-**Office hours:**  Thursdays 4:30-6pm at the study tables in the Koelbel atrium
+**Office hours:**  
+- Spencer:  Thursdays 4:30-6pm at the study tables in the Koelbel atrium
+- Marilyn:  Wednesdays 3:00-5:50pm at the study tables in the Koelbel atrium
 
 
 ## Course Description
