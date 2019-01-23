@@ -10,7 +10,7 @@ Leeds School of Business, University of Colorado Boulder
 **Office:**  Koelbel 215 (I cannot imagine spending much time here)
 
 **Office hours:**  
-- Spencer:  Thursdays 4:30-6pm at the study tables in the Koelbel atrium
+- Spencer:  Thursdays 10:00am-11:30am at the study tables in the Koelbel atrium
 - Marilyn:  Wednesdays 3:00-5:50pm at the study tables in the Koelbel atrium
 
 
