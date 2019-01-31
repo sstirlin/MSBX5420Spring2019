@@ -34,7 +34,12 @@ style of programming (think `map`, `filter`, `reduce`).  The instructions can be
 https://unstructured-playgroud.gitbook.io/unstructuredplayground/v/release-1.0/homework/week-3 
 
 
-## Videos
+## Videos (REQUIRED)
 
-I will post extended "Office Hours videos" here later today where I answer the common questions that I am
-hearing, and point out a few extra things.  COMING SOON.
+Please watch these "Spencer's extended office hours" videos.  I have decided that they are required
+because there is a lot of content in here.
+
+https://drive.google.com/file/d/1Y9knhbbbW-jgixdszw5R_xnTt4Kwq-Td/view?usp=sharing
+https://drive.google.com/file/d/1EHlbzSJH3trHIjbJAU_jLHjhGCWCMyvT/view?usp=sharing
+https://drive.google.com/file/d/1EGp1z-9ht2XXgoG2sfSikfNpdaJVcH36/view?usp=sharing
+
