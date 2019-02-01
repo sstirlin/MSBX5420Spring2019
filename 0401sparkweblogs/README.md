@@ -28,22 +28,23 @@ docker run -d --name spark  -p 8888:8888  \
 Use `docker ps` to verify that the container is now running.
 
 Recall that this container is "batteries included", so it already contains
-a running instance of Python, Jupyter, and Spark.
+a running instance of Python, Jupyter, and Spark.  **You do not need to start
+Jupyter (using Anaconda).  An instance of Jupyter is already running in the docker container.**
 
 Browse to `localhost:8888` and Jupyter should show up.
 
 ## Download data
 
 Back in the terminal, step into your work directory and create a new place for
-this weeks homework to live:
+this week's homework to live:
 ```
 cd ~/work
 mkdir week4
 cd week4
 ```
 
-Now we will download two files containing weblog data that we will analyze.  You *could* download these
-from your browser, but we're command-line junkies now.
+Now we will download two files from NASA containing weblog data.  We *could* download these
+using a regular browser, but we're command-line junkies now.
 
 There are two ways to download files
 on the command line:  `wget` and `curl`.  Let's use `wget` today for no particular reason:
@@ -51,12 +52,13 @@ on the command line:  `wget` and `curl`.  Let's use `wget` today for no particul
 wget ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
 wget ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
 ```
-(Aside:  notice that NASA is *not* using the web protocol `http` that you are accustomed to,
-but instead the "File Transfer Protocol" `ftp`.  Browsers can "speak" dozens of protocols, actually).
+(Aside:  notice that NASA is *not* publishing these files using `http` (HyperText Transfer Protocol),
+but instead they are using "File Transfer Protocol" `ftp`.  That's fine - browsers "speak" dozens of protocols).
 
 ## Inspect data
 
-These are compressed (zipped) text files containing logs from NASAs web servers (back in 1995!).
+The weblogs (from 1995!) are stored as text files that have been compressed (zipped).  Each line
+records a separate request.
 
 ### About compression
 
@@ -64,7 +66,7 @@ There are several popular compression algorithms in common use.  For example, yo
 compressed using the PKZip algorithm (they have a `.zip` extension).
 
 In Linux you will commonly see files compressed
-using GNU Gzip (they have a `.gz` extension) and BZip2 (extension `bz2`).  There are other older formats as well.
+using GNU Gzip (they have a `.gz` extension) and BZip2 (extension `.bz2`).
 All of these formats are totally different and incompatible with each other!
 
 ### Decompress
@@ -80,13 +82,13 @@ NASA_access_log_Aug95.gz
 NASA_access_log_Jul95
 ```
 
-We *could* open up the July logfile in `nano`, but this file is quite large (about 200 megabytes) and is hard work
-for `nano`.  We can use the handy `tail` command in Linux to look at the last few lines of the file:
+We *could* open up the July logfile in `nano`, but this file is quite large (about 200 megabytes).
+Instead, let's use the handy `tail` command to look at the last few lines of the file:
 ```
 tail NASA_access_log_Jul95
 ```
 
-This spits out the last several log lines of the file.  It should look like this:
+The output should look like this:
 ```
 slipper12055.iaccess.za - - [28/Jul/1995:13:32:22 -0400] "GET /images/USA-logosmall.gif HTTP/1.0" 200 234
 163.205.53.14 - - [28/Jul/1995:13:32:22 -0400] "GET /shuttle/technology/images/srb_mod_compare_1-small.gif HTTP/1.0" 200 36902
@@ -110,9 +112,10 @@ requesting_host user_identity user_local_identity [timestamp] "requested_resourc
 - `user_identity` Usually missing (indicated by "-").  We will not use this
 - `user_local_identity` Usually missing (indicated by "-").  We will not use this
 - `timestamp` Timestamp in "DD/MMM/YYYY:HH:MM:SS -TIMEZONE" format
-- `requested_resource` The request that was made in the format "METHOD /path/to/resource PROTOCOL_VERSION".  For HTTP the METHOD can
-  be GET, PUT, POST, and DELETE
-- `return_code` The HTTP return code.  For example, 200 means "success"
+- `requested_resource` The request itself.  It has the format `METHOD /path/to/resource PROTOCOL/VERSION`.  Most requests used the
+  HTTP protocol, and the most common METHOD was GET.  Enrichment:  the most important [HTTP methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
+  are GET, PUT, POST, and DELETE because they are used to build so-called [REST](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f) services.
+- `return_code` The [HTTP return code](https://www.restapitutorial.com/httpstatuscodes.html).  For example, 200 means "success"
 - `bytes_transferred` Number of bytes transferred to requestor.  Can be 0 or - if nothing was transferred.
 
 ### Compress again
