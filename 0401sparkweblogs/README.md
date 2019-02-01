@@ -112,11 +112,14 @@ requesting_host user_identity user_local_identity [timestamp] "requested_resourc
 - `user_identity` Usually missing (indicated by "-").  We will not use this
 - `user_local_identity` Usually missing (indicated by "-").  We will not use this
 - `timestamp` Timestamp in "DD/MMM/YYYY:HH:MM:SS -TIMEZONE" format
-- `requested_resource` The request itself.  It has the format `METHOD /path/to/resource PROTOCOL/VERSION`.  Most requests used the
-  HTTP protocol, and the most common METHOD was GET.  Enrichment:  the most important [HTTP methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
-  are GET, PUT, POST, and DELETE because they are used to build so-called [REST](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f) services.
+- `requested_resource` The request itself.  It has the format `METHOD /path/to/resource PROTOCOL/VERSION`.  Most of these logs will
+  have PROTOCOL=HTTP and METHOD=GET
 - `return_code` The [HTTP return code](https://www.restapitutorial.com/httpstatuscodes.html).  For example, 200 means "success"
 - `bytes_transferred` Number of bytes transferred to requestor.  Can be 0 or - if nothing was transferred.
+
+**Enrichment**:  You can learn more about [HTTP methods](https://www.w3schools.com/tags/ref_httpmethods.asp).
+We probably won't do much HTTP programming in this class, but it is used everywhere to build
+[REST](https://medium.com/extend/what-is-rest-a-simple-explanation-for-beginners-part-1-introduction-b4a072f8740f) services.
 
 ### Compress again
 
