@@ -1,16 +1,16 @@
 # Week 4 Homework
 
-## Quickstart
-
 This week your homework will give you some solid experience with Spark.  You will be
 analyzing weblogs from NASA and extracting insights.
 
-First, in your VM, make sure that your `spark` docker container is running:
+## Quickstart
+
+First, in your VM, make sure that your spark docker container is running:
 ```
 docker ps
 ```
 
-If your `spark` container is not listed then it might just be stopped.  See
+If your spark container is not listed then it might just be stopped.  See
 if you can find it in the list of stopped containers:
 ```
 docker ps -a
@@ -38,11 +38,11 @@ Back in the terminal, step into your work directory and create a new place for
 this weeks homework to live:
 ```
 cd ~/work
-mkdir work4
-cd work4
+mkdir week4
+cd week4
 ```
 
-Now download two files containing weblog data that we will analyze.  You *could* download these
+Now we will download two files containing weblog data that we will analyze.  You *could* download these
 from your browser, but we're command-line junkies now.
 
 There are two ways to download files
@@ -51,5 +51,9 @@ on the command line:  `wget` and `curl`.  Let's use `wget` today for no particul
 wget ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz
 wget ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz
 ```
+(Aside:  notice that NASA is providing these files *not* using the web protocol `http` that you are accustomed to,
+but instead is using the "File Transfer Protocol" `ftp`.  Browsers can "speak" dozens of protocols, actually).
+
+
 
 
