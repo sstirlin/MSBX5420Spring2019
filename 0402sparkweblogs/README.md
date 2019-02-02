@@ -111,7 +111,7 @@ requesting_host user_identity user_local_identity [timestamp] "requested_resourc
 - `requesting_host` This is the IP address or DNS name of the host that made the request
 - `user_identity` Usually missing (indicated by "-").  We will not use this
 - `user_local_identity` Usually missing (indicated by "-").  We will not use this
-- `timestamp` Timestamp in "DD/MMM/YYYY:HH:MM:SS -TIMEZONE" format
+- `timestamp` Timestamp
 - `requested_resource` The request itself.  It has the format `METHOD /path/to/resource PROTOCOL/VERSION`.  Most of these logs will
   have PROTOCOL=HTTP and METHOD=GET
 - `return_code` The [HTTP return code](https://www.restapitutorial.com/httpstatuscodes.html).  For example, 200 means "success"
