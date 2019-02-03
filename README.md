@@ -4,8 +4,6 @@ Leeds School of Business, University of Colorado Boulder
 
 **Instructor:**  Dr. Spencer Stirling
 
-**Co-Instructor:**  Marilyn Waldman
-
 [Contact us](syllabus/syllabus.md#contact-information)
 
 
