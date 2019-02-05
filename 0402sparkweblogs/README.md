@@ -1,7 +1,7 @@
 # Week 4 Homework
 
-This week your homework will give you some solid experience with Spark.  You will be
-analyzing weblogs from NASA and extracting insights.
+This week your homework will give you some experience with Spark and prepare
+you for next week's exam (where you will be analyzing weblogs from NASA and extracting insights).
 
 ## Quickstart
 
@@ -17,7 +17,7 @@ docker ps -a
 ```
 If so then you can restart it with `docker start spark`.
 
-Otherwise, you will need to create a new container:
+If you couldn't find the container at all then you need to create a new container:
 ```
 docker run -d --name spark  -p 8888:8888  \
     -v $HOME/work:/home/jovyan/work:rw  \
@@ -109,13 +109,12 @@ requesting_host user_identity user_local_identity [timestamp] "requested_resourc
 ```
 
 - `requesting_host` This is the IP address or DNS name of the host that made the request
-- `user_identity` Usually missing (indicated by "-").  We will not use this
-- `user_local_identity` Usually missing (indicated by "-").  We will not use this
-- `timestamp` Timestamp
-- `requested_resource` The request itself.  It has the format `METHOD /path/to/resource PROTOCOL/VERSION`.  Most of these logs will
-  have PROTOCOL=HTTP and METHOD=GET
+- `user_identity` Ignore this.  It is often missing anyway (indicated by "-")
+- `user_local_identity` Ignore this.  It is often missing anyway (indicated by "-")
+- `timestamp` Date and time when the request occurred
+- `requested_resource` The request itself.  It has the format `METHOD /path/to/resource PROTOCOL/VERSION`
 - `return_code` The [HTTP return code](https://www.restapitutorial.com/httpstatuscodes.html).  For example, 200 means "success"
-- `bytes_transferred` Number of bytes transferred to requestor.  Can be 0 or - if nothing was transferred.
+- `bytes_transferred` Number of bytes transferred.  Can be 0 or - if nothing was transferred
 
 **Enrichment**:  You can learn more about [HTTP methods](https://www.w3schools.com/tags/ref_httpmethods.asp).
 We probably won't do much HTTP programming in this class, but it is used everywhere to build
@@ -130,4 +129,9 @@ gzip NASA_access_log_Jul95
 
 ## Download notebook
 
-TODO
+This week you will submit 2 notebooks.  Use these commands to download them:
+
+```
+wget https://raw.githubusercontent.com/sstirlin/MSBX5420Spring2019/master/0402sparkweblogs/weblog_analysis1.ipynb
+wget https://raw.githubusercontent.com/sstirlin/MSBX5420Spring2019/master/0402sparkweblogs/weblog_analysis2.ipynb
+```
