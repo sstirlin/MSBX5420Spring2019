@@ -135,3 +135,18 @@ You will submit 2 notebooks.  Use these commands to download them:
 wget https://raw.githubusercontent.com/sstirlin/MSBX5420Spring2019/master/0402sparkweblogs/weblog_analysis1.ipynb
 wget https://raw.githubusercontent.com/sstirlin/MSBX5420Spring2019/master/0402sparkweblogs/weblog_analysis2.ipynb
 ```
+
+## Errata
+
+### `weblog_analysis1.ipynb`
+
+There is an interesting issue that happens when you read the files using the command
+```
+logs_rdd = sc.textFile('NASA_access_log_*.gz')
+```
+As I mentioned in lecture, the ORDER that operations occur in Spark can be tricky business.  Here, there is no
+guarantee which of the two files will be read in first.  In order to pass the unit tests below it we need to
+fix the order.  Change the command to this instead:
+```
+logs_rdd = logs_rdd = sc.textFile('NASA_access_log_Aug95.gz,NASA_access_log_Jul95.gz')
+```
