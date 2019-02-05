@@ -127,9 +127,9 @@ Let's compress the log file again so that (later) we can demonstrate that Spark 
 gzip NASA_access_log_Jul95
 ```
 
-## Download notebook
+## Download notebooks
 
-This week you will submit 2 notebooks.  Use these commands to download them:
+You will submit 2 notebooks.  Use these commands to download them:
 
 ```
 wget https://raw.githubusercontent.com/sstirlin/MSBX5420Spring2019/master/0402sparkweblogs/weblog_analysis1.ipynb
