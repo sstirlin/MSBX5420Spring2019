@@ -19,10 +19,10 @@ Leeds School of Business, University of Colorado Boulder
 |--------------|------|
 |Week 1<br>January 14    |[VM Installation](0101vminstallation/README.md)<br>[Course Overview](0102courseoverview/README.md)<br>[What is Virtualization?](0103whatisvirtualization/README.md)<br>[Virtualization-lite: Docker](0301docker/README.md)<br>HOMEWORK [Linux Basics and Bash](0104bash/README.md)|
 |Week 2<br>January 21    |MLK NO CLASS<br>HOMEWORK [Intro to Python](0201python/README.md)|
-|Week 3<br>January 28    |COMPLETE BEFORE CLASS [Install Spark cluster](https://unstructured-playgroud.gitbook.io/unstructuredplayground/v/release-1.0/apache-spark-ecosystem/install-spark)<br>HOMEWORK [Stats in Python](0305homework/README.md)<br>SOLUTIONS [Stats in Python](0306homework_solutions/)|
+|Week 3<br>January 28    |COMPLETE BEFORE CLASS [Install standalone Spark cluster](https://unstructured-playgroud.gitbook.io/unstructuredplayground/v/release-1.0/apache-spark-ecosystem/install-spark)<br>HOMEWORK [Stats in Python](0305homework/README.md)<br>SOLUTIONS [Stats in Python](0306homework_solutions/)|
 |Week 4<br>February 4    |[Intro to Spark](0401sparkintro/)<br>HOMEWORK [NASA weblogs](0402sparkweblogs/README.md)|
 |Week 5<br>February 11   |[Spark architecture](0501sparkarchitecture/README.md)<br>HOMEWORK [Exam 1](0502examweblogs/README.md)|
-|February 18   |<br>[Manage source code with git](0302git/README.md)|
+|Week 6<br>February 18   |COMPLETE BEFORE CLASS [Install Spark and HDFS clusters](0601installspark/README.md)<br>[Manage source code with git](0302git/README.md)|
 |February 25   |Spark 4 |
 |March 4       |Hive 1 |
 |March 11      |Hive 2 |
