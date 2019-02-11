@@ -21,29 +21,27 @@ Sorry about the confusion there.
 
 ## Install HDFS and Spark cluster
 
-We're going to run proper HDFS and Spark clusters using docker because
-it is instructive to see the details of how the clusters are configured.
+We're going to run proper HDFS and Spark clusters (using docker).  It is
+instructive to see the details of how the clusters are configured.
 
-In the VM start by downloading a cluster configuration file:
+I have created a cluster configuration that will make this whole thing
+easy.  Start by downloading my cluster configuration:
 ```
 cd ~/work
 git clone https://github.com/sstirlin/docker-spark.git
 cd docker-spark
 ```
 
-Inside of here you will see a file named `docker-compose.yml`.  You are
-welcome to open it up in `nano` and have a look.  Basically, this file
-describes how to stand up a "real" Spark cluster (complete with a dedicated
+In this directory you will see a file named `docker-compose.yml`.
+
+If you are curious, go ahead and open it up in `nano`.  Basically, this file
+describes how to stand up a "real" Spark cluster (with a dedicated
 master node and a single worker node) and a "real" HDFS
-cluster (complete with a dedicated namenode and a single datanode).
+cluster (with a dedicated namenode and a single datanode).
 
-We could easily add more Spark worker nodes and more HDFS datanodes, but
-the VM will be unhappy so let's not.
-
-When managing multiple docker containers as a cluster, the `docker-compose`
-command is extremely useful.  Rather than running individual `docker run ...`
-commands for each container, you can just create a `docker-compose.yml` configuration
-file and let `docker-compose` do all of the hard work for you.
+Think of this file as replacing a bunch of individual `docker run ...` commands.
+We will use a helpful command called `docker-compose` to manage our little mini
+clusters for us.
 
 For now let's just pull down all the containers that we need:
 ```
@@ -60,8 +58,9 @@ cd ~/work/docker-spark
 docker-compose up -d
 bash expose_hostnames.sh
 ```
-The last script is some magic to configure the DNS so that
-we can talk to our containers by *name* (instead of IP address).
+The last script has some magic to configure the DNS (so we can refer to our
+docker containers using names instead of IP addresses).
+I'll discuss what is going on in class.
 
 We're going to use Anaconda Python (like we used in Week 2) to talk to
 our HDFS and Spark clusters.  First, activate your Python environment
@@ -83,8 +82,8 @@ jupyter notebook
 I will demonstrate in lecture how to connect to both HDFS and Spark from Jupyter, but if
 you are curious then you can check out [this example Jupyter notebook](hello_world_spark.ipynb).
 
-When you are done with the HDFS and Spark clusters you can shut them down by entering the following
-into a terminal (inside your Linux VM):
+When you are done with the HDFS and Spark clusters you can shut them down with the following
+commands:
 ```
 cd ~/work/docker-spark/
 docker-compose down
