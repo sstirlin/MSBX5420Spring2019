@@ -16,3 +16,20 @@ the other RDDs that we worked with in Problem 1.
 ### Problem 3
 
 I accidentally forgot to tell you the name of the variable to store you estimate.  Use `unsuccessful_ratio`
+
+### Problem 1
+
+Parsing `requested_resource` is actually broken into a 2-part problem.  In the first part we are ASSUMING that
+there are always 3 fields, like this:
+```
+GET /a/cool/resource.html HTTP/1.0
+```
+In the second part we discover that isn't true.  In fact there are sometimes only 2 fields, like this
+```
+GET /a/cool/resource.html
+```
+or even this
+```
+GET  HTTP/1.0
+```
+Your "better" regex needs to take these into account.  At the end of the day you should only find 1 bad entry.
