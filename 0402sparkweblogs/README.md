@@ -150,3 +150,7 @@ fix the order.  Change the command to this instead:
 ```
 logs_rdd = sc.textFile('NASA_access_log_Aug95.gz,NASA_access_log_Jul95.gz')
 ```
+
+### Helpful resources
+
+https://docs.python.org/3.7/howto/regex.html
