@@ -15,7 +15,9 @@ the other RDDs that we worked with in Problem 1.
 
 ### Problem 3
 
-I accidentally forgot to tell you the name of the variable to store you estimate.  Use `unsuccessful_ratio`
+Two mistakes here (to my embarrassment).  First, I intended for you to compute the fraction of
+**UNsuccessful** requests.  Also, I forgot to tell you the name of the variable to store you estimate.
+Use `unsuccessful_ratio`.
 
 ### Problem 1
 
