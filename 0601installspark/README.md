@@ -1,13 +1,15 @@
+BEFORE PROCEEDING:  Go back to Week 5 lecture and cover the last bit about Grouping in Spark!!!
+
+
 # Install HDFS and Spark cluster
 
-We are done with our trusty `jupyter/all-spark-notebook` docker container.  This
-has been a useful "one-stop shop" and we've learned a lot from it, but it is time
-to say goodbye.
+We are done with the `jupyter/all-spark-notebook` docker container.  This
+has been a useful "one-stop shop" (everything bundled into a single docker container),
+but we want to dig more into the internals of Spark.
 
-In the VM stop and remove the container:
+In the VM stop the container:
 ```
 docker stop spark
-docker rm spark
 ```
 
 We also had previousy downloaded an HDFS docker image, but we never used it.
@@ -16,13 +18,12 @@ In fact there's a better way to run HDFS, so let's just delete this image:
 docker rmi sequenceiq/hadoop-docker:2.7.1
 ```
 
-Sorry about the confusion there.
-
 
 ## Install HDFS and Spark cluster
 
-We're going to run proper HDFS and Spark clusters (using docker).  It is
-instructive to see the details of how the clusters are configured.
+We're going to run proper HDFS and Spark clusters (using docker).  Even though
+these will still be running on your laptop, they look and behave like real (albeit low-horsepower)
+HDFS and Spark clusters.
 
 I have created a cluster configuration that will make this whole thing
 easy.  Start by downloading my cluster configuration:
@@ -35,9 +36,8 @@ cd docker-spark
 In this directory you will see a file named `docker-compose.yml`.
 
 If you are curious, go ahead and open it up in `nano`.  Basically, this file
-describes how to stand up a "real" Spark cluster (with a dedicated
-master node and a single worker node) and a "real" HDFS
-cluster (with a dedicated namenode and a single datanode).
+describes how to launch (and knit together) several docker containers that make up our
+Spark and HDFS clusters.  We will discuss this more in class.
 
 Think of this file as replacing a bunch of individual `docker run ...` commands.
 We will use a helpful command called `docker-compose` to manage our little mini
