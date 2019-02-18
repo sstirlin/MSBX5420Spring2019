@@ -58,11 +58,10 @@ cd ~/work/docker-spark
 docker-compose up -d
 bash expose_hostnames.sh
 ```
-The last script has some magic to configure the DNS (so we can refer to our
-docker containers using names instead of IP addresses).
-I'll discuss what is going on in class.
+The last command configures the DNS so we can refer to our containers by name
+instead of IP address.  I'll discuss this in class.
 
-We're going to use Anaconda Python (like we used in Week 2) to talk to
+We're going to use Anaconda Python (like in Week 2) to talk to
 our HDFS and Spark clusters.  First, activate your Python environment
 (this was installed in Week 2):
 ```

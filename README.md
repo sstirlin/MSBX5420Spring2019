@@ -22,7 +22,7 @@ Leeds School of Business, University of Colorado Boulder
 |Week 3<br>January 28    |COMPLETE BEFORE CLASS [Install standalone Spark](https://unstructured-playgroud.gitbook.io/unstructuredplayground/v/release-1.0/apache-spark-ecosystem/install-spark)<br>HOMEWORK [Stats in Python](0305homework/README.md)<br>SOLUTIONS [Stats in Python](0306homework_solutions/)|
 |Week 4<br>February 4    |[Intro to Spark](0401sparkintro/)<br>HOMEWORK [NASA weblogs](0402sparkweblogs/README.md)|
 |Week 5<br>February 11   |[Spark architecture](0501sparkarchitecture/README.md)<br>HOMEWORK [Exam 1](0502examweblogs/README.md)|
-|Week 6<br>February 18   |[Install Spark and HDFS clusters](0601installspark/README.md)<br>[Intro to HDFS](0602hdfsintro/README.md)<br>HOMEWORK [Manage source code with git](0302git/README.md)|
+|Week 6<br>February 18   |[Install Spark and HDFS clusters](0601installspark/README.md)<br>[JSON tutorial](0602jsontutorial/README.md)<br>[Intro to HDFS](0603hdfsintro/README.md)<br>HOMEWORK [Manage source code with git](0302git/README.md)|
 |Week 7<br>February 25   |Spark 4 |
 |March 4       |Hive 1 |
 |March 11      |Hive 2 |
