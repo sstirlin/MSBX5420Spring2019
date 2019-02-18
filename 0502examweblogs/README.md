@@ -6,6 +6,11 @@ You can download it using this command:
 wget https://raw.githubusercontent.com/sstirlin/MSBX5420Spring2019/master/0502examweblogs/exam1.ipynb
 ```
 
+Watch this help video to help you with Problem 1!
+
+https://drive.google.com/file/d/1qdE3s9zfRIJGDkcqW3vuQVyF18mHsvhK/view?usp=sharing
+
+
 ## Errata
 
 ### Problems 2-5
