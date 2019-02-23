@@ -1,52 +1,77 @@
-# Unpacking CWL data and uploading to HDFS
+# Homework Week 7
 
-You will create your own account up in Github (choose your username wisely -
-this is your developer "persona" long past the end of this course).
+For the homework this week we will momentarily step away from Spark and
+concentrate on some basic data engineering tasks:
 
-Create a new repo
-named `week6`.  In this repo you will commit two files:
+1. You will create an account on Github and start using `git` to manage
+your work.  Please watch [this video](../0604git/README.md) to understand
+the basics of using git and Github.
 
-- `unpack.sh`
-- `upload_cwl_hdfs.ipynb`
+2. You will learn some basics about programming in `bash`.  You will write
+a script called `unpack.sh` that unzips the CWL datasets.
 
-In Canvas you will submit a *link* to your repo.
+3. You will perform some manual analysis of the `json` files in Python (without Spark).
+
+4. You will upload the `json` files into HDFS for analysis in Spark next week.
 
 
-## `unpack.sh`
+# Unpacking CWL data
 
-As we have seen, the json files are all tarred and gzipped.  We need
-to unpack them all (limiting ourselves to 2018 data only).
+You should already have the CWL data downloaded into your `~/work/week6` directory.
+If not follow the instructions [here](../0602jsontutorial/README.md).
 
-We will automate this using a `bash` script.
-
-First let's have a look at the zipped files:
+Make a new directory to work in:
 ```
-cd ~/work/week6/
-cd cwl-data/data/structured/structured-2018*.tar.gz
+cd ~/work
+mkdir week7
+cd week7
 ```
+In the week7 folder you need to unpack all of the 2018 data that is in
+`~/work/week6/cwl-data/data/structured/`.
 
-Recall that we unzipped our New Orleans file with the following command:
-```
-tar zxvf cwl-data/data/structured/sstructured-2018-01-14-neworleans.tar.gz
-```
+For example, there is a file
+`~/work/week6/cwl-data/data/structured/structured-2018-01-14-neworleans.tar.gz'.
+When you unzip and untar it into `week7` you should get a directory  
+`~/work/week7/structured-2018-01-14-neworleans/` that contains many json files.
+Repeat this for ALL of the 2018 data.
 
-Write a bash script (using `nano`) named `unpack.sh` that automates
-unpacking all of these `.tar.gz` files.  You will have to google around
-to learn some bash scripting basics.  YOU ARE READY!
+You will write a bash script named `unpack.sh` to automate this.  Do NOT just manually process 
+the filenames one at a time.  Instead, you will write a `for` loop in a bash script.
 
-Then run it like this:
-```
-bash unpack.sh
-```
+To learn how to write bash scripts you might start with this short [video](https://www.youtube.com/watch?v=F-gskSl4pwQ),
+then move on to this [tutorial](https://ryanstutorials.net/bash-scripting-tutorial/).
 
-## `upload_cwl_hdfs.ipynb`
+Commit your `unpack.sh` script to a repo named `week7` in Github.
 
-Once all of the `.tar.gz` files have been unpacked, we need to upload them to
-HDFS.
+In Canvas submit a link to your `week7` repo in the comments so that I can verify.
+
+
+## Basic analysis in Python
+
+
+
+
+## Upload files to HDFS `upload_cwl_hdfs.ipynb`
+
+Next week we will analyize this unpacked data in Spark, so we need to upload it
+all to HDFS.  
 
 Create a new Jupyter notebook named `upload_cwl_hdfs.ipynb` that uploads ALL
-of your unpacked directories to `/Users/vagrant/` in HDFS (keep the directory
-structure intact).
-
+of your unpacked directories to `/Users/vagrant/` in HDFS.  Keep the directory
+structure intact, so when you do `client.list('/Users/vagrant/')` the output
+should look like this (these are all directories containing json files):
+```
+['structured-2018-01-14-neworleans',
+ 'structured-2018-03-11-atlanta',
+ 'structured-2018-04-01-birmingham',
+ 'structured-2018-04-08-proleague1',
+ 'structured-2018-04-19-relegation',
+ 'structured-2018-04-22-seattle',
+ 'structured-2018-06-17-anaheim',
+ 'structured-2018-07-29-proleague2',
+ 'structured-2018-08-19-champs']
+```
 Some useful functions for you can be found in the Python library `os`, in particular
-in `os.path`.  Another one to check out is `glob`.
+in `os.path`.  Another very useful library is `glob`.
+
+Commit your `upload_cwl_hdfs.ipynb` file to your `week7` repo up on Github.

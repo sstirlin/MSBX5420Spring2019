@@ -24,13 +24,13 @@ Leeds School of Business, University of Colorado Boulder
 |Week 5<br>February 11   |[Spark architecture](0501sparkarchitecture/README.md)<br>HOMEWORK [Exam 1](0502examweblogs/README.md)|
 |Week 6<br>February 18   |[Install Spark and HDFS clusters](0601installspark/README.md)<br>[JSON tutorial](0602jsontutorial/README.md)<br>[Intro to HDFS](0603hdfsintro/README.md)<br>HOMEWORK [Manage source code with git](0604git/README.md)<br>NO OTHER HOMEWORK THIS WEEK|
 |Week 7<br>February 25   |Spark 4 |
-|March 4       |Hive 1 |
-|March 11      |Hive 2 |
-|March 18      |Exam 2 |
+|Week 8<br>March 4       |Hive 1 |
+|Week 9<br>March 11      |Hive 2 |
+|Week 10<br>March 18      |Exam 2 |
 |March 25      |Spring Break NO CLASS |
-|April 1       |Kafka 1 |
-|April 8       |Kafka 2 |
-|April 15      |Kafka 3 |
-|April 22      |Guest Lecture: Tim Berglund from Confluent |
-|April 29      |Elasticsearch |
+|Week 11<br>April 1       |Kafka 1 |
+|Week 12<br>April 8       |Kafka 2 |
+|Week 13<br>April 15      |Kafka 3 |
+|Week 14<br>April 22      |Guest Lecture: Tim Berglund from Confluent |
+|Week 15<br>April 29      |Elasticsearch |
 |Final         |To be announced |
