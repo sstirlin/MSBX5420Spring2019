@@ -23,7 +23,7 @@ Leeds School of Business, University of Colorado Boulder
 |Week 4<br>February 4    |[Intro to Spark](0401sparkintro/)<br>HOMEWORK [NASA weblogs](0402sparkweblogs/README.md)|
 |Week 5<br>February 11   |[Spark architecture](0501sparkarchitecture/README.md)<br>HOMEWORK [Exam 1](0502examweblogs/README.md)|
 |Week 6<br>February 18   |[Install Spark and HDFS clusters](0601installspark/README.md)<br>[JSON tutorial](0602jsontutorial/README.md)<br>[Intro to HDFS](0603hdfsintro/README.md)<br>HOMEWORK [Manage source code with git](0604git/README.md)<br>NO OTHER HOMEWORK THIS WEEK|
-|Week 7<br>February 25   |Spark 4 |
+|Week 7<br>February 25   |HOMEWORK [CWL analysis](0702cwlanalyze/README.md) |
 |Week 8<br>March 4       |Hive 1 |
 |Week 9<br>March 11      |Hive 2 |
 |Week 10<br>March 18      |Exam 2 |
