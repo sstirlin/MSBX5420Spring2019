@@ -38,18 +38,19 @@ cd structured/
 gunzip structured-2018-01-14-neworleans.tar.gz
 tar xvf structured-2018-01-14-neworleans.tar
 ```
-or we can do this all in one command
+alternatively, we could've done this all in one command
 ```
 tar zxvf structured-2018-01-14-neworleans.tar.gz
 ```
-
+Go ahead and look at what one of the json files looks like!
 ```
 cd structured-2018-01-14-neworleans/
 nano structured-1515984523-6592b573-b485-58b0-963e-6be0b4d02f6c.json
+cd ..
 ```
-
+Let's gzip the neworleans file back up:
 ```
-cat structured-1515984523-6592b573-b485-58b0-963e-6be0b4d02f6c.json | jq . | less
+gzip structured-2018-01-14-neworleans.tar
 ```
 
 ## JSON tutorial in Python
