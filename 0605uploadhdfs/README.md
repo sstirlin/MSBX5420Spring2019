@@ -26,17 +26,16 @@ cd ~/work
 mkdir week7
 cd week7
 ```
-In the week7 folder you need to unpack all of the 2018 data that is in
+In the `week7` folder you need to unpack all of the 2018 data that is in
 `~/work/week6/cwl-data/data/structured/`.
 
 For example, there is a file
-`~/work/week6/cwl-data/data/structured/structured-2018-01-14-neworleans.tar.gz'.
+`~/work/week6/cwl-data/data/structured/structured-2018-01-14-neworleans.tar.gz`.
 When you unzip and untar it into `week7` you should get a directory  
 `~/work/week7/structured-2018-01-14-neworleans/` that contains many json files.
-Repeat this for ALL of the 2018 data.
 
 You will write a bash script named `unpack.sh` to automate this.  Do NOT just manually process 
-the filenames one at a time.  Instead, you will write a `for` loop in a bash script.
+the `.tar.gz` files.  Instead, you will write a `for` loop in a bash script.
 
 To learn how to write bash scripts you might start with this short [video](https://www.youtube.com/watch?v=F-gskSl4pwQ),
 then move on to this [tutorial](https://ryanstutorials.net/bash-scripting-tutorial/).
