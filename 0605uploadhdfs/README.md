@@ -15,7 +15,7 @@ a script called `unpack.sh` that unzips the CWL datasets.
 4. You will upload the `json` files into HDFS for analysis in Spark next week.
 
 
-# Unpacking CWL data
+## Unpacking CWL data
 
 You should already have the CWL data downloaded into your `~/work/week6` directory.
 If not follow the instructions [here](../0602jsontutorial/README.md).
@@ -47,10 +47,35 @@ In Canvas submit a link to your `week7` repo in the comments so that I can verif
 
 ## Basic analysis in Python
 
+Visualization is obviously very important in data science.  In this exercise you will learn
+a bit about processing json files and a bit about building custom visualizations
+using `matplotlib`.
+
+Each of the json files is a single match that was played.  If you open the json in Python
+(see last week's lecture) you will notice an `events` fields.  This field contains a list
+of events that occurred.
+
+Of interest right now are events of type `spawn` and `death`.  Using the images found in
+`~/work/week6/cwl-data/maps/ww2`, produce for each match (each json file) a "spawn-death" 
+visualization that shows the spawns as BLUE dots and the deaths as RED dots.
+
+For example, in the New Orleans directory there is a json file named
+`structured-1515984523-6592b573-b485-58b0-963e-6be0b4d02f6c.json`.  Process this file in
+Python and produce an image named `structured-1515984523-6592b573-b485-58b0-963e-6be0b4d02f6c.png`
+that shows where all of the spawns and deaths occurred.
+
+A full-fledged example can be found in `~/work/week6/cwl-data/research/PlotOnMap.ipynb`.  It is
+your job to decipher it and adapt it to your needs.
+
+Do all of this work in a notebook called `visualizejson.ipynb` and check it into your repo up
+on Github.
+
+In Canvas submit one example image `structured-1515984523-6592b573-b485-58b0-963e-6be0b4d02f6c.png`
+so that I can validate what you have done (your code should process ALL of the json files, but I
+only want to look at one example to verify).
 
 
-
-## Upload files to HDFS `upload_cwl_hdfs.ipynb`
+## Upload files to HDFS
 
 Next week we will analyize this unpacked data in Spark, so we need to upload it
 all to HDFS.  
