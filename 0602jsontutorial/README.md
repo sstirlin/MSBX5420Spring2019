@@ -1,7 +1,6 @@
 # Introduction to JSON
 
-We are going to download some data (from Call of Duty) locally to our VM.  Your homework will be to
-unpack and upload it into HDFS.
+We are going to download some data (from Call of Duty) locally to our VM.
 
 
 ## What is Call of Duty World League?
@@ -32,7 +31,7 @@ cd data/
 cd structured/
 ```
 
-## Unpack the 2018 New Orleans .tar.gz file
+## Unpack the 2018 New Orleans .tar.gz file to have a look
 
 ```
 gunzip structured-2018-01-14-neworleans.tar.gz
