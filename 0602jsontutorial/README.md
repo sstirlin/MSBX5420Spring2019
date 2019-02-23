@@ -1,4 +1,4 @@
-# Introduction to HDFS
+# Introduction to JSON
 
 We are going to download some data (from Call of Duty) locally to our VM.  Your homework will be to
 unpack and upload it into HDFS.
