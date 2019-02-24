@@ -70,7 +70,7 @@ conda activate py37
 
 Let's install some packages in order to talk to Spark and HDFS:
 ```
-conda install pyspark python-hdfs
+conda install pyspark=2.4.0 python-hdfs
 ```
 
 Now just start Jupyter:
