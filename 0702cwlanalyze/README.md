@@ -1,7 +1,7 @@
 # Homework Week 7
 
 For the homework this week we will momentarily step away from Spark and
-concentrate on some basic data engineering tasks:
+concentrate on some basic data engineering skills:
 
 1. You will create an account on Github and start using `git` to manage
 your work.  Please watch [this video](../0604git/README.md) to understand
@@ -84,7 +84,7 @@ only want to look at one example to verify).
 
 ## Upload files to HDFS
 
-Next week we will analyize this unpacked data in Spark, so we need to upload it
+Next week we will analyze this unpacked data in Spark, so we need to upload it
 all to HDFS.  
 
 Create a new Jupyter notebook named `upload_cwl_hdfs.ipynb` that uploads ALL
