@@ -94,7 +94,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", inline: "sudo userdel -r ubuntu || :"
   config.vm.provision "shell", inline: "test -e hadoop-2.7.6.tar.gz || wget http://apache.cs.utah.edu/hadoop/common/hadoop-2.7.6/hadoop-2.7.6.tar.gz", privileged: false
   config.vm.provision "shell", inline: "test -e hadoop-2.7.6 || tar zxvf hadoop-2.7.6.tar.gz", privileged: false
-  config.vm.provision "shell", inline: "sudo apt-get install -y default-jre"
+  config.vm.provision "shell", inline: "cd $HOME/hadoop-2.7.6/etc/hadoop && curl -O https://raw.githubusercontent.com/sstirlin/docker-spark/master/base/core-site.xml", privileged: false
+  config.vm.provision "shell", inline: "cd $HOME/hadoop-2.7.6/etc/hadoop && curl -O https://raw.githubusercontent.com/sstirlin/docker-spark/master/base/hdfs-site.xml", privileged: false
+  config.vm.provision "shell", inline: "sudo apt-get install -y openjdk-11-jre"
+
   config.vm.provision "shell", inline: "echo \"export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64\" >> ~/.bashrc", privileged: false
   config.vm.provision "shell", inline: "echo \"export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64\" >> ~/.zshrc", privileged: false
   config.vm.provision "shell", inline: "echo \"export HADOOP_HOME=$HOME/hadoop-2.7.6\" >> ~/.bashrc", privileged: false
