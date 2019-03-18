@@ -23,6 +23,7 @@ pip install confluent-kafka
 ```
 cd ~/work/docker-kafka
 docker-compose up -d
+bash expose_hostnames.sh
 
 cd ~/work
 mkdir week10
