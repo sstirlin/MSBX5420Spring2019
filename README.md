@@ -28,7 +28,7 @@ Leeds School of Business, University of Colorado Boulder
 |Week 9<br>March 11      |[More DataFrames](0901dataframewindowing)<br>HOMEWORK [ETL CWL data](0902etlcwl/README.md) |
 |Week 10<br>March 18     |[Install Kafka cluster](1001installkafka/README.md)<br>[Intro to Kafka](1002introkafka/)<br>EXAM [Exam 2](1003cwldataframeanalysis/README.md) |
 |March 25                |Spring Break NO CLASS |
-|Week 11<br>April 1       |Kafka 1 |
+|Week 11<br>April 1       |[REST APIs](1101citibikeexplore/README.md)<br>HOMEWORK [Ingest CitiBike into Kafka](1102citibikeingest/README.md) |
 |Week 12<br>April 8       |Kafka 2 |
 |Week 13<br>April 15      |Kafka 3 |
 |Week 14<br>April 22      |Guest Lecture: Tim Berglund from Confluent |
