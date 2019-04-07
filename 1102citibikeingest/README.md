@@ -15,5 +15,5 @@ This utility acts as a consumer (or you can write you own consumer in Python lik
 did in lecture).  `kafkacat` makes it easy to just double-check that there are messages
 in a topic.  You run it like this:
 ```
-kafkacat -b kafka-1:9092 -G test.consumer.group.1 citibike.station.update.1
+kafkacat -b kafka-1:9092 -o beginning -t citibike.station.update.1
 ```
