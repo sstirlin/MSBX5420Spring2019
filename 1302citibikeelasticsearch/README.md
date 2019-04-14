@@ -4,9 +4,9 @@ In this homework we will pull together the pieces that we have been learning
 over the past few weeks.
 
 In Week 11 we built a script that scrapes the CitiBike website and ingests
-the data into a Kafka topic.  Open up a terminal and start this script.  This
-will start filling the Kafka topic with data (people say "hydrate" with data, even
-though I abhor this terminology).
+the data into a Kafka topic.  When you have Part 1 completed below then open up a terminal 
+and start the Week 11 script.  This will start filling the Kafka topic with data (people say
+"hydrate" with data, even though I abhor this terminology).
 
 ## Part 1
 
