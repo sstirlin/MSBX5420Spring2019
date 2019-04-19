@@ -89,3 +89,29 @@ since this bloats the size of each message (and hence costs $$$).
 
 
 ## Part 2
+
+In this part you will "fling" your messages into Elasticsearch (as was demonstrated in class).
+
+First, fix your output message format above to be more "Elasticsearch friendly".  Let's use
+`last_reported` for our timestamp field (but remember: this is measured in seconds, and Elasticsearch
+expects milliseconds).
+
+Second, put the fields `lat` and `lon` under a new field `location` so that we can make it a geo_point
+in Elasticsearch.
+
+Now change your annotator:  instead of printing messages, let's fling them into Elasticsearch.  Use an
+index named `citibike_station_update_1` (your code should check if this index exists, and if not create it).
+For the document type you can create a new one called `station_update`.
+
+When creating the index you will need to configure the schema like we did in class.
+
+Once you are ingesting into Elasticsearch, get into Kibana and create some visualizations.  The first should
+be just a graph showing messages being ingested over the past hour (use the `Discover` tab).  The second should
+be a map showing the physical locations of where the bikes are (hint: look at `num_bikes_available`).  Your map
+won't be able to zoom very closely into New York City, but it'll be enough to demonstrate the concept.
+
+*What to submit*
+
+- citibike_annotator.py
+- screenshot of messages ingested over time
+- screenshot of geolocation/mapped data displaying where the free bikes are in the city
