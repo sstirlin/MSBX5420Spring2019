@@ -30,7 +30,7 @@ Leeds School of Business, University of Colorado Boulder
 |March 25                |Spring Break NO CLASS |
 |Week 11<br>April 1       |[REST APIs](1101citibikeexplore/README.md)<br>HOMEWORK [Ingest CitiBike into Kafka](1102citibikeingest/README.md) |
 |Week 12<br>April 8       |[Consuming from Kafka](1201kafkaconsumer/README.md)<br>HOMEWORK COMBINED WITH WEEK 13 |
-|Week 13<br>April 15      |[Intro to Elasticsearch](1301introelasticsearch/README.md)<br>HOMEWORK [CitiBike Elasticsearch analysis](1302citibikeelasticsearch/README.md) |
-|Week 14<br>April 22      |Guest Lecture: Tim Berglund from Confluent |
-|Week 15<br>April 29      |Elasticsearch |
-|Final         |To be announced |
+|Week 13<br>April 15      |[Intro to Elasticsearch and Kibana](1301introelasticsearch/README.md)<br>HOMEWORK [CitiBike Elasticsearch analysis](1302citibikeelasticsearch/README.md) |
+|Week 14<br>April 22      |Ask Me Anything lecture |
+|Week 15<br>April 29      |[Elasticsearch query language: Lucene](1501lucene/README.md) |
+|Final         |[Final](final/README.md) |
