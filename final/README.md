@@ -13,22 +13,23 @@ Minimum Value Product (MVP) to deliver.
 
 ## The dataset
 
-The dataset consists of a list of items purchased.  Grouping by Invoice Num, you can see
-that items often appear together in the same market basket.  You will use Elasticsearch to
-understand these co-occurrences and use them to make future recommendations (much like Amazon's
-"Customers who bought this also bought <whatever>".
+The dataset consists of a list of items purchased from an online retailer.  Grouping by Invoice Num, 
+you can see that items are purchased together in a "basket".  You will use Elasticsearch to
+understand what items are frequently purchased together and use this information to make future recommendations
+(much like Amazon's "Customers who bought this also bought <whatever>").
 
 [Retail dataset](https://archive.ics.uci.edu/ml/datasets/online+retail#)
 
-A great thing to do is to split this dataset into training and test sets.  Since they are
+It is good practice to split your dataset into training and test sets.  Since they are
 time-ordered, perhaps choose the first 80% of invoices as training, and the rest as a test set.
+Use the test set to validate your recommendations.  Do they make sense?
 
 
 ## What you will submit
 
 You will submit to Canvas a `.tar.gz` file that contains your project all zipped up.  It is mostly
 up to you to decide how to structure your project, but remember that neatness and code readability are
-extremely IMPORTANT.  If I cannot figure out what you are doing then I'm likely to stop looking at it.
+extremely IMPORTANT.  If I cannot figure it out easily then I won't spend much time on it.
 
 Your project should include a file named `README.md` explaining how to run your project,
 expected inputs and outputs, etc.  This document should be written in Markdown, which is a very common 
@@ -39,18 +40,18 @@ https://guides.github.com/features/mastering-markdown/
 
 ## Some guidance
 
-The dataset comes as an `.xlsx` file (Excel).  You should use `pandas` to read it in.  You will probably
-want to group rows that have the same Invoice Num together (aka a "basket").  For each basket you
+The dataset comes as an `.xlsx` file (Excel).  You should use `pandas` to read it in.  You should
+group rows that have the same Invoice Num together (aka a "basket").  For each basket you
 should produce a message that describes the basket.
 
-Part of the challenge is to figure out what your json messages should look like.  They need to have all of the
+Part of the challenge is to figure out what your json message should look like.  It needs to have all of the
 information describing the basket, but also be "Elasticsearch friendly".  After all, Elasticsearch is what
 is going to give you the recommendations.
 
 In a real system you would produce each message to Kafka, then run a separate program that consumes
 from Kafka and flings to Elasticsearch (in other words, exactly the pattern that was used in Week 13 homework).
 
-However, if you don't think you will have time then go ahead and fling directly from pandas into
+However, if you don't have time then go ahead and fling directly from pandas into
 Elasticsearch (i.e. bypass Kafka).
 
 As far as the Elasticsearch analysis is concerned, you shouldn't need to know much more about Lucene than was
@@ -67,5 +68,5 @@ You will find in your jobs that bosses want to SEE your system running (whatever
 out some cool dashboards in Kibana then go for it.  If you manage to create something interesting
 then include screenshots in your `.tar.gz` submission.
 
-Often I find this aspect of building a system challenging.  Still, it is a fact of life.  The sooner you get used
-to concocting visualizations to satisfy non-technical people, the better.
+Often I find this aspect of building a system challenging.  Still, it is a fact of life.  The sooner you become
+accustomed to concocting visualizations to satisfy non-technical people, the better.
