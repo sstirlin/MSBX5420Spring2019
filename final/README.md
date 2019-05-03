@@ -9,7 +9,7 @@ The inspiration is drawn from this article (building something similar for ingre
 
 This final is fairly open-ended.  In other words, it resembles projects that you might encounter
 in your jobs.  I am telling you the business requirement, but it is up to you to figure out a
-Minimum Value Product (MVP) to deliver.
+Minimum Viable Product (MVP) to deliver.
 
 ## The dataset
 
