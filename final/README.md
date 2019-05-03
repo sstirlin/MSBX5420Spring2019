@@ -8,15 +8,20 @@ The inspiration is drawn from this article (building something similar for ingre
 [A recommender system for ingredients in recipes](https://qbox.io/blog/building-simple-recommender-systems-for-elasticsearch-1) 
 
 This final is fairly open-ended.  In other words, it resembles projects that you might encounter
-in your jobs.  I am telling you the business requirement, but it is up to you to figure out a
+in your jobs.  I am giving you the business requirement, but it is up to you to figure out a
 Minimum Viable Product (MVP) to deliver.
 
 ## The dataset
 
-The dataset consists of a list of items purchased from an online retailer.  Grouping by Invoice Num, 
-you can see that items are purchased together in a "basket".  You will use Elasticsearch to
-understand what items are frequently purchased together and use this information to make future recommendations
-(much like Amazon's "Customers who bought this also bought <whatever>").
+The dataset consists of items purchased from an online retailer over the course of a year or two.
+If you group by Invoice Num, you can see that items are purchased together in a "basket".
+
+You will use Elasticsearch to
+learn what items are frequently purchased together and use this information to make future recommendations
+(much like Amazon's "Customers who bought this also bought <whatever>").  This is called an "item-item"
+recommender.
+
+Here is the dataset:
 
 [Retail dataset](https://archive.ics.uci.edu/ml/datasets/online+retail#)
 
@@ -32,7 +37,8 @@ up to you to decide how to structure your project, but remember that neatness an
 extremely IMPORTANT.  If I cannot figure it out easily then I won't spend much time on it.
 
 Your project should include a file named `README.md` explaining how to run your project,
-expected inputs and outputs, etc.  This document should be written in Markdown, which is a very common 
+expected inputs and outputs, and any other relevant information.
+This document should be written in Markdown, which is a very common 
 (and easy to learn) documentation format.
 
 https://guides.github.com/features/mastering-markdown/
@@ -47,10 +53,10 @@ should produce a message that describes the basket.
 
 Part of the challenge is to figure out what your json message should look like.  It needs to have all of the
 information describing the basket, but also be "Elasticsearch friendly".  After all, Elasticsearch is what
-is going to give you the recommendations.
+is going to perform the analysis.
 
 In a real system you would produce each message to Kafka, then run a separate program that consumes
-from Kafka and flings to Elasticsearch (in other words, exactly the pattern that was used in Week 13 homework).
+from Kafka and flings to Elasticsearch (exactly the pattern that was used in Week 13 homework).
 
 However, if you don't have time then go ahead and fling directly from pandas into
 Elasticsearch (i.e. bypass Kafka).
@@ -65,7 +71,7 @@ expert.
 
 "It is not enough for justice to be done.  It must be SEEN to be done." - a random movie quote that you won't know anyway
 
-You will find in your jobs that bosses want to SEE your system running (whatever that means).  If you can figure
+You will find in your jobs that others want to SEE your system running (whatever that means).  If you can figure
 out some cool dashboards in Kibana then go for it.  If you manage to create something interesting
 then include screenshots in your `.tar.gz` submission.
 
