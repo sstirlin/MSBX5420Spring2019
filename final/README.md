@@ -40,8 +40,9 @@ https://guides.github.com/features/mastering-markdown/
 
 ## Some guidance
 
-The dataset comes as an `.xlsx` file (Excel).  You should use `pandas` to read it in.  You should
-group rows that have the same Invoice Num together (aka a "basket").  For each basket you
+The dataset comes as an `.xlsx` file (Excel).  It is possible to open up Excel files in `pandas` directly,
+but if you want you can first open it in Excel and export to `.csv` before using `pandas` to read the file. 
+You should group rows that have the same Invoice Num together (aka a "basket").  For each basket you
 should produce a message that describes the basket.
 
 Part of the challenge is to figure out what your json message should look like.  It needs to have all of the
