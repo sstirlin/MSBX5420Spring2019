@@ -77,3 +77,20 @@ then include screenshots in your `.tar.gz` submission.
 
 Often I find this aspect of building a system challenging.  Still, it is a fact of life.  The sooner you become
 accustomed to concocting visualizations to satisfy non-technical people, the better.
+
+
+## Hint 1
+
+Since many of you are struggling to get started, I spent a few minutes stubbing out how I would start.
+
+First, I wrote a conversion script to convert the `.xlsx` file to a `.csv`.  This script does some minor
+data cleaning as well.  It is [here](hint1/convert_xlsx_to_csv.py).  It requires you to install an extra
+package to work:
+```
+conda install xlrd
+```
+However, you can ignore this conversion step.  Look [here](hint1/Online_Retail.csv) for a nice cleaned CSV dataset.  You
+may start here.
+
+Next, I have stubbed out a [flinger](hint1/es_flinger.py) to Elasticsearch.  You can see how I am structuring each
+message.  The message format might require some modifications later, but this should get you started.
