@@ -81,7 +81,8 @@ accustomed to concocting visualizations to satisfy non-technical people, the bet
 
 ## Hint 1
 
-Since many of you are struggling to get started, I spent a few minutes stubbing out how I would start.
+Since many of you are struggling to get started, I spent a few minutes stubbing out how I would start.  This is
+certainly not the only way to approach this problem.
 
 First, I wrote a conversion script to convert the `.xlsx` file to a `.csv`.  This script does some minor
 data cleaning as well.  It is [here](hint1/convert_xlsx_to_csv.py).  It requires you to install an extra
